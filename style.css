@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'banshee';
+    src: url("assets/font/Banshee Std Regular.otf")
+}
+
+
+
+.flex-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+nav {
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    backdrop-filter: blur(8px);
+    flex: 1;
+    font-size: 32px;
+    text-align: center;
+    position: center;
+    border-block: solid;
+    height: 67px;
+    justify-content: space-between;
+}
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+        .nav-links ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #D3D3D3;
+            display: block;
+            margin: auto;
+            transition: 0.2s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+
+.Content {
+    height: 3180px;
+    margin: auto;
+}
+
+
+.Home {
+    min-height: 99vh;
+    width: 100%;
+    background-image: url('assets/img/logo.png');
+    background-position: center;
+    background-size: cover;
+    position: center;
+}
+
+
+.About {
+    position: relative;
+    width: 80%;
+    background: no-repeat center url('assets/img/waentjie.jpeg');
+    background-position-y: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: banshee;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.row {
+    font-size: 25px;
+    margin-top: 5%;
+    display: flow-root;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 33%;
+    background: #D3D3D3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    opacity: 0.7;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 6px;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+
+
+h1 {
+    font-family: banshee;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    padding-top: 250px;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-block: 50px;
+    padding-left: inherit;
+    padding-right: inherit;
+    background: #D3D3D3;
+    display: grid;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 25px;
+}
+
+
+
+    form input, form textarea {
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 1.4rem;
+        outline: none;
+        outline-color: darkgrey;
+        background: white;
+        font-size: 16px;
+    }
+
+    form button {
+        padding: 15px;
+        background: #D3D3D3;
+        color: black;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        width: 350px;
+        margin: 20px auto 0;
+        border-radius: 30px;
+    }
